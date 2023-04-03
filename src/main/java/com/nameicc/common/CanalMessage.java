@@ -6,13 +6,13 @@ import java.io.Serializable;
 import java.util.List;
 
 @Data
-public class CanalMessage<T> implements Serializable {
+public class CanalMessage implements Serializable {
 
     private String type;
 
     private String table;
 
-    private List<T> data;
+    private List<String> data;
 
     private String database;
 
@@ -22,7 +22,7 @@ public class CanalMessage<T> implements Serializable {
 
     private Boolean isDdl;
 
-    private List<T> old;
+    private List<String> old;
 
     private List<String> pkNames;
 
